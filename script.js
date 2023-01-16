@@ -39,14 +39,15 @@ const test = (arg) => {
 const test2 = {
     color: "red",
     size: "small",
-    lebel: 5,
+    level: 5,
     sample: () => {
         console.log("Hello");
     }
 };
 
 document.getElementsByTagName("button")[0].addEventListener("click", () => {
-    alert("こんにちは！！");    
+    alert("こんにちは！！"); 
+    console.log(test2);   
 });
 
 const btn = document.getElementById("btn");
@@ -55,6 +56,7 @@ btn.addEventListener("click", () => {
     btn.style.color = "black";
     btn.style.fontWeight = "bold";
     btn.style.background = "red";
+    console.log(btn.style);
 });
 
 const btn2 = document.getElementById("btn2");
